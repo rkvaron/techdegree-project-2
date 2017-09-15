@@ -9,6 +9,7 @@ body {
   font-family: 'Arimo', sans-serif;
   line-height: 1.5;
   color: #222;
+  text-align: center;
 }
 
 p {
@@ -16,28 +17,92 @@ p {
   margin-bottom: 1.5em;
 }
 
-h1, h2, h3 {
+h1, h3 {
   font-family: 'Droid Sans', sans-serif;
+  color: #222;
+}
 
+h2 {
+  	text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+h3 {
+  font-size: 1.2em;
 }
 
 a {
   text-decoration: none;
+  color: 000;
+}
+
+/* ---- Navigation ---- */
+
+.name {
+  text-align: center;
+  color: #222;
+  font-size: 1.4em;
+  padding-top: 10px;
+}
+
+.name a {
+    color: #222;
+}
+
+.main-nav {
+  font-size: 1.1em;
+  text-align: center;
+
+}
+
+.main-nav a {
+	text-transform: uppercase;
+  text-weight: 700;
+  color: #222;
+  margin: 10px 0;
+
+      background-color: #fff;
+
+}
+.main-nav a:hover {
+	color: #093a58;
+
+}
+
+.name a,
+.main-nav a {
+	padding: 10px 15px;
+	display: block;
+  margin-bottom: 2px;
 }
 
 
-/* =================================
-  Layout Styles
-==================================== */
+/* -- Containers and wrappers -- */
 
-.container {
+.container{
   padding-left: 1em;
   padding-right: 1em;
+  max-width: 100%;
+}
+
+.top {
+  background-color:#fafafa;
+}
+
+/* -- Profile Section -- */
+.profile {
+  margin: 25px 0;
+  padding: 20px 0;
 }
 
 
+/* ----images ---*/
 
-
+img {
+  max-width: 90vw;
+}
 
 /* =================================
   Media Queries
