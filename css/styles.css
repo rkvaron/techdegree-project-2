@@ -1,0 +1,40 @@
+/* =================================
+  Base Styles
+==================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+  line-height: 1.5;
+  color: #222;
+}
+
+p {
+  font-size: .95em;
+  margin-bottom: 1.5em;
+}
+
+h1, h2, h3 {
+  font-family: 'Droid Sans', sans-serif;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =================================
+  Layout Styles
+==================================== */
+
+
+
+
+
+
+
+/* =================================
+  Media Queries
+==================================== */
