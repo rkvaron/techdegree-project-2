@@ -150,13 +150,29 @@ img {
   Media Queries
 ==================================== */
 @media (min-width: 769px) {
+  .wrapper {
+    max-width: 980px;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .name {
+    display: inline;
+    text-align: left;
+    font-size: 1.1em;
+    padding: 10px;
+  }
+  .name a {
+    display: inline-block;
+  }
   .main-nav {
-
+    font-size: 1.0em;
+    text-align: center;
+      display: inline-block;
   }
   .main-nav li {
     padding: 0 10px;
-    display: inline-block;
     font-size: .9em;
+    display: inline-block;
   }
   .main-nav a {
       background-color: #fafafa;
@@ -171,6 +187,16 @@ img {
     padding: 20px;
     margin-bottom: 2em;
   }
+  img {
+    max-width: 400px;
+  }
+  .portfolio-item {
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+    margin: -4px;
+  }
+
   .clearfix:after {
   content: "";
   display: table;
