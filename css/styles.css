@@ -21,7 +21,7 @@ p {rgb(35, 55, 154)
 
 h1, h3 {
   font-family: 'Droid Sans', sans-serif;
-  color: #222;
+  color: #111;
 }
 
 h2 {
@@ -30,6 +30,7 @@ h2 {
     text-align: center;
     font-size: 1.1em;
     padding: 50px;
+    color: #111;
 }
 
 h3 {
@@ -38,7 +39,7 @@ h3 {
 
 a {
   text-decoration: none;
-  color: 000;
+  color: #000;
 }
 
 /* ---- Navigation ---- */
@@ -69,7 +70,7 @@ a {
 
 }
 .main-nav a:hover {
-	color: #093a58;
+	color: red;
 
 }
 
@@ -112,32 +113,44 @@ a {
 
 /* -- contact -- */
 .contact a {
-  color: #222;
+  color: #777;
 
 }
 
 /* ---footer -----*/
 footer{
-  border-top: 1px solid #999;
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid #b5b0b0;
   margin: 1em;
+  justify-content: space-between;
+  align-items: flex-start;
+    color: #222;
+}
+
+footer ul {
+    flex-wrap: nowrap;
 }
 
 footer li {
   text-decoration: none;
-  display: inline-block;
   color: #222;
-  margin-right: auto;
-  padding: 10px 20px 20px 0;
 }
-
+footer p {
+  margin-right: auto;
+  text-align: left;
+}
 footer li a {
   text-transform: uppercase;
   font-size: .85em;
   text-decoration: none;
-  display: inline-block;
-  color: #222;
-  margin-left: 40px;
-  padding: 10px 0 20px 20px;
+}
+.sm-footer-menu {
+  padding-top: 20px;
+}
+
+.md-footer-menu {
+  display: none;
 }
 
 /* ----images ---*/
@@ -152,31 +165,26 @@ img {
 @media (min-width: 769px) {
   .wrapper {
     max-width: 980px;
-    padding-left: 1em;
     padding-right: 1em;
-  }
-  .name {
-    display: inline;
-    text-align: left;
-    font-size: 1.1em;
-    padding: 10px;
-  }
-  .name a {
-    display: inline-block;
-  }
-  .main-nav {
-    font-size: 1.0em;
-    text-align: center;
-      display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
   }
   .main-nav li {
     padding: 0 10px;
     font-size: .9em;
     display: inline-block;
   }
+
   .main-nav a {
       background-color: #fafafa;
-  }
+      font-size: .9em;
+      padding-top: 0;
+      margin-top: 0;
+    }
+    h2 {
+      font-size: 1em;
+    }
+
   .profile img {
     float:right;
     padding-left: 10px;
@@ -188,24 +196,65 @@ img {
     margin-bottom: 2em;
   }
   img {
-    max-width: 400px;
+    width: 40vw;
+    max-width: 500px;
+
   }
   .portfolio-item {
     width: 50%;
     display: inline-block;
-    padding: 10px;
+    padding: 0 10px;
     margin: -4px;
+    vertical-align: top;
+  }
+  .contact {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .md-footer-menu {
+    font-size: .85em;
+    display: inline-flex;
+    padding: 20px 10px;
+  }
+
+  footer li:first-child {
+    display: none;
   }
 
   .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
   }
 
 }
 
 @media (min-width: 1024px) {
+  .main-header {
+
+  }
+  .name {
+    float: left;
+    text-align: left;
+    font-size: 1.1em;
+    margin:0;
+  }
+  .name a {
+    display: inline-block;
+  }
+  .main-nav {
+    font-size: 1.0em;
+    text-align: center;
+    float: right;
+  }
+  .main-nav li {
+    padding: 0 10px;
+    font-size: .9em;
+    display: inline-block;
+  }
 
 
 }
