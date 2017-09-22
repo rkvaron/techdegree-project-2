@@ -10,13 +10,14 @@ body {
   line-height: 1.5;
   color: #888;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   background-color:#fafafa;
 }
 
-p {rgb(35, 55, 154)
-  font-size: .95em;
+p {
+  font-size: 1em;
   margin-bottom: 1.5em;
+  padding: 0 1em;
 }
 
 h1, h3 {
@@ -28,13 +29,14 @@ h2 {
   	text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 50px;
     color: #111;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.25em;
+  font-weight: 500;
 }
 
 a {
@@ -47,51 +49,51 @@ a {
 .name {
   text-align: center;
   color: #222;
-  font-size: 1.3em;
-  padding-top: 10px;
+  font-size: 1.5em;
+  padding-top: 20px;
+  font-family: Pacifico, serif;
 }
-
 .name a {
     color: #222;
 }
-
 .main-nav {
-  font-size: 1.1em;
+  font-size: 1em;
   text-align: center;
+  padding-bottom: 20px;
+  margin-top: 5px;
 
 }
-
 .main-nav a {
 	text-transform: uppercase;
-  text-weight: 700;
   color: #222;
   margin: 10px 0;
   background-color: #fff;
-
 }
 .main-nav a:hover {
 	color: red;
-
 }
-
 .name a,
 .main-nav a {
 	padding: 10px 15px;
 	display: block;
-  margin-bottom: 2px;
-}
 
+}
 
 /* -- Containers and wrappers -- */
-
-.portfolio, .header, .contact {
-  padding-left: 1em;
-  padding-right: 1em;
-  max-width: 100%;
+.wrapper {
+  background-color: rgb(244, 224, 229);
+  width: 100%;
 }
-
-.top, .bottom {
-
+.portfolio, header, footer, .contact, .skills {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 1em;
+}
+header, footer {
+  background-color: rgb(241, 198, 208);
+}
+header {
+  margin-top: -15px;
 }
 
 /* -- Profile Section -- */
@@ -99,22 +101,43 @@ a {
   margin: 25px 0;
   padding: 20px 0;
 }
+.profile img {
+  width: 70%;
+  border: #fff inset 5px;
+}
 
 /* -- portfolio section-- */
 .portfolio {
   background-color:#ffffff;
   padding-bottom: 2em;
-
-}
-
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  }
+.portfolio h2 {
+  margin: 0 auto;
+  }
 .portfolio-item {
   margin-bottom: 2em;
 }
-
+.portfolio img {
+  max-width: 100%;
+}
+/* -- skills -- */
+.skills {
+  background-color: #ececec;
+  margin-top: -15px;
+  padding-bottom: 50px;
+}
+.skills img{
+  width: 200px;
+}
 /* -- contact -- */
 .contact a {
   color: #777;
-
+}
+.contact  {
+  margin-bottom: 50px;
 }
 
 /* ---footer -----*/
@@ -122,16 +145,13 @@ footer{
   display: flex;
   flex-direction: row;
   border-top: 1px solid #b5b0b0;
-  margin: 1em;
   justify-content: space-between;
   align-items: flex-start;
-    color: #222;
+  color: #222;
 }
-
 footer ul {
     flex-wrap: nowrap;
 }
-
 footer li {
   text-decoration: none;
   color: #222;
@@ -148,83 +168,62 @@ footer li a {
 .sm-footer-menu {
   padding-top: 20px;
 }
-
 .md-footer-menu {
   display: none;
 }
-
 /* ----images ---*/
 
-img {
-  max-width: 90vw;
-}
 
 /* =================================
   Media Queries
 ==================================== */
 @media (min-width: 769px) {
   .wrapper {
-    max-width: 1200px;
     margin: 0 auto;
+    padding: 0;
   }
   .main-nav li {
     padding: 0 10px;
-    font-size: .9em;
     display: inline-block;
   }
 
   .main-nav a {
       background-color: #fafafa;
       font-size: .9em;
-      padding-top: 0;
       margin-top: 0;
     }
-    h2 {
+  h2 {
       font-size: 1em;
     }
 
   .profile img {
-    float:right;
-    padding-left: 10px;
-    margin: 10px;
+    float: right;
+    margin: 10px 10px 10px 20px;
+    width: 40%;
   }
   .profile {
     text-align: left;
     padding: 20px;
     margin-bottom: 2em;
   }
-  /*img {
-    width: 40vw;
-    max-width: 500px;
-  }
-  .portfolio-item {
-    width: 50%;
-    display: inline-block;
-    padding: 0 10px;
-    margin: -4px;
-    vertical-align: top;
-  }  ---also 2 coulmns usinf display: inline-block--- */
 
-  .portfolio {
-    display: flex;
-    flex-wrap: wrap;
-  }
   .portfolio h2 {
-  width: 100%;
-  }
+    width: 100%;
+    }
   .portfolio-item {
     flex: 1;
+    justify-content: space-around;
+    min-width: 40vw;
+    margin-left: 5px;
+    margin-right: 5px;
   }
-  .portfolio-item img {
-    max-width: 40vw;
+  .skills img{
+    float:left;
+    margin: 20px;
   }
-  .contact {
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+
   .md-footer-menu {
-    font-size: .85em;
+    font-size: .95em;
     display: inline-flex;
     padding: 20px 10px;
   }
@@ -242,11 +241,21 @@ img {
 }
 
 @media (min-width: 1024px) {
-
+  .wrapper {
+    background-color: rgb(241, 198, 208);
+  }
+  .container, .profile, footer {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  header {
+    margin-left: 0;
+    padding-left: 0;
+  }
   .name {
     float: left;
     text-align: left;
-    font-size: 1.1em;
+    font-size: 1.5em;
     margin:0;
   }
   .name a {
@@ -256,18 +265,30 @@ img {
     font-size: 1.0em;
     text-align: center;
     float: right;
+    padding-bottom: 0;
   }
   .main-nav li {
-    padding: 20px 10px;
-    font-size: .9em;
-    display: inline-block;
+    padding: 20px 10px 10px 10px;
+  }
+  .profile, .contact {
+    background-color: rgb(244, 224, 229);
   }
   .portfolio {
-    display: flex;
+    justify-content: space-around;
+  }
+  .portfolio-item {
+    flex-basis: 28%;
+    min-width: 200px;
   }
   .portfolio-item img {
-    width: 30vw;
-    max-width: 350px;
+    max-width: 300px;
   }
-
+  .contact {
+    margin-top: -14px;
+    padding-bottom: 50px;
+  }
+  .contact  p {
+    max-width: 50%;
+    margin: 0 auto 30px auto;
+  }
 }

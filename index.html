@@ -1,38 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio page for Student</title>
-    <link href="https://fonts.googleapis.com/css?family=Arimo|Droid+Sans:700" rel="stylesheet">
+    <title>Portfolio page for Rachel Varon</title>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Droid+Sans:500|Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
 <body>
   <div class="wrapper">
-  <div class="container top" id="#top">
+  <div class="container top" id="top">
     <header class="main-header clearfix">
-  		<h1 class="name"><a href="#">Student Name</a></h1>
-  		<ul class="main-nav">
-  			<li><a href="#">Home</a></li>
-  			<li><a href="#">Portfolio</a></li>
-  			<li><a href="#">Contact</a></li>
-  		</ul>
+  		<h1 class="name"><a href="#">Rachel Kuniansky Varon</a></h1>
+      <nav class="main-nav">
+        <ul>
+    			<li><a href="#top">Home</a></li>
+    			<li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+    			<li><a href="#contact">Contact</a></li>
+    		</ul>
+      </nav>
     </header><!--/.main-header-->
   </div>
 
     <div class="profile clearfix">
-      <img src="images/responsive-layout-profile.png" alt="Photo of Student">
-      <p>Hi! I'm a front end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and I am excited to put my skills to use. </p>
+      <img src="images/RVheadshot3-500.jpg" alt="Photo of Rachel Varon">
+      <p>Hi! I’m an art enthusiast and code ninja who wants to make the web a more beautiful and welcoming place. I recently completed a tech degree in front-end development at Treehouse and I look forward to adding to this list of completed projects. </p>
     </div>
 
   <div class="container">
-    <div class="portfolio clearfix">
+    <div class="portfolio clearfix" id="portfolio">
       <h2>Portfolio</h2>
       <div class="item-1 portfolio-item">
         <img
-            srcset="images/portfolio-1.png 1280w,
-                    images/portfolio-1-small.png 500w"
+            sizes="(min-width:769px) 375px"
+            srcset="images/portfolio-1-md.png 750w,
+                    images/portfolio-1-small.png 400w"
             src="images/portfolio-1.png"
             alt="Webpage wireframe with blue background">
         <h3>Marketing Page</h3>
@@ -40,8 +44,9 @@
       </div>
       <div class="item-2 portfolio-item">
         <img
-            srcset="images/portfolio-2.png 1280w,
-                    images/portfolio-2-small.png 500w"
+            sizes="(min-width:769px) 375px"
+            srcset="images/portfolio-2-md.png 750w,
+                    images/portfolio-2-small.png 400w"
             src="images/portfolio-2.png"
             alt="Webpage wireframe with gold background">
         <h3>Search Page</h3>
@@ -49,8 +54,9 @@
       </div>
       <div class="item-3 portfolio-item">
         <img
-            srcset= "images/portfolio-3.png 1280w,
-                    images/portfolio-3-small.png 500w"
+            sizes="(min-width:769px) 375px"
+            srcset= "images/portfolio-3-md.png 750w,
+                    images/portfolio-3-small.png 400w"
             src="images/portfolio-3.png"
             alt="Webpage wireframe with navy background">
         <h3>Travel App</h3>
@@ -58,8 +64,9 @@
       </div>
       <div class="item-4 portfolio-item">
         <img
-            srcset="images/portfolio-4.png 1280w,
-                    images/portfolio-4-small.png 500w"
+            sizes="(min-width:769px) 375px"
+            srcset="images/portfolio-4-md.png 750w,
+                    images/portfolio-4-small.png 400w"
             src="images/portfolio-4.png"
             alt="Webpage wireframe with teal background">
         <h3>Map of Favorite Spots</h3>
@@ -67,8 +74,9 @@
       </div>
       <div class="item-5 portfolio-item">
         <img
-            srcset="images/portfolio-5.png 1280w,
-                    images/portfolio-5-small.png 500w"
+            sizes="(min-width:769px) 375px"
+            srcset="images/portfolio-5-md.png 750w,
+                    images/portfolio-5-small.png 400w"
             src="images/portfolio-5.png"
             alt="Webpage wireframe with purple background">
         <h3>Photo Gallery</h3>
@@ -76,32 +84,40 @@
       </div>
       <div class="item-6 portfolio-item">
         <img
-            srcset="images/portfolio-6.png 1280w,
-                    images/portfolio-6-small.png 500w"
+            sizes="(min-width:769px) 375px"
+            srcset="images/portfolio-6-md.png 750w,
+                    images/portfolio-6-small.png 400w"
             src="images/portfolio-6.png"
             alt="Webpage wireframe with grey background">
         <h3>Calculator</h3>
         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
       </div>
     </div> <!--end porfolio -->
-  </div>
+
+    <div class="skills clearfix" id="skills">
+      <h2>Experience</h2>
+        <img src="images/kuva.jpg" alt="KuVa logo" />
+        <p>Rachel worked the Director of the Marcus Institute for Digital Education on the Arts (MIDEA) and the Director of Special Projects for the New Media Consortium (NMC), an international consortium of nearly 300 world-class universities, colleges, museums, research centers, and technology companies. She is recognized throughout the state of Texas as an expert in the application of digital media technologies and museum educational environments.</p>
+        <p>Rachel launched KUVA Design Studio in 2017 to pursue her interest in graphic and web design.  She loves to help small business people to problem solve and create pleasing designs for their brands.
+    </div>
     <section class="bottom">
-      <div class="contact">
+      <div class="contact" id="contact">
         <h2>Contact</h2>
         <p>If you are interested in chatting ot want more information about what I've been working on, I'd love to hear from you!</p>
         <p><a href="">Phone: <strong>+1 (111) 555-1234</strong></a></p>
         <p><a href="">Email: <strong>email@yoursite.com</strong></a></p>
       </div>
     </section>
-  </div>
+  </div> <!-- end wrapper -->
     <footer>
-      <p>Student name</p>
+      <p>&copy; 2017 Rachel K. Varon</p>
       <ul class="footer-nav">
         <li class="sm-footer-menu"><a href="#top">Back to top</a></li>
-        <li class="md-footer-menu"><a href="#">Home</a></li>
-        <li class="md-footer-menu"><a href="#">Portfolio</a></li>
-        <li class="md-footer-menu"><a href="#">Contact</a></li>
-      <ul>
+        <li class="md-footer-menu"><a href="#top">Home</a></li>
+        <li class="md-footer-menu"><a href="#portfolio">Portfolio</a></li>
+        <li class="md-footer-menu"><a href="#skills">Skills</a></li>
+        <li class="md-footer-menu"><a href="#contact">Contact</a></li>
+      </ul>
     </footer>
 
 </div>
